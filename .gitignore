@@ -67,3 +67,6 @@ setup
 setup.cfg
 setup.py
 nshell.sh
+venv
+odoo.desktop.conf
+odoo.laptop.conf

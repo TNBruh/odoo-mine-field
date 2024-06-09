@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_property" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="res_model">real_estate_ads.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="view_id" ref="real_estate_ads_property_view_tree" />
+    </record>
+
+    <record id="action_property_type" model="ir.actions.act_window">
+        <field name="name">Property Type</field>
+        <field name="res_model">real_estate_ads.property_type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="view_id" ref="real_estate_ads_property_type_view_tree"/>
+    </record>
+
+    <record id="action_property_tag" model="ir.actions.act_window">
+        <field name="name">Property Tag</field>
+        <field name="res_model">real_estate_ads.property_tag</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="view_id" ref="real_estate_ads_property_tag_view_tree"/>
+    </record>
+
+    <record id="action_property_offer" model="ir.actions.act_window">
+        <field name="name">Property Offer</field>
+        <field name="res_model">real_estate_ads.property_offer</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="view_id" ref="real_estate_ads_property_offer_view_tree"/>
+    </record>
+
+    <!-- <record id="action_server_check_offers" model="ir.actions.server">
+        <field name="name">Check Offers</field>
+        <field name="model_id" ref="model_real_estate_ads_property"/>
+        <field name="binding_model_id" ref="model_real_estate_ads_property"/>
+        <field name="state">code</field>
+        <field name="code">
+            record.check_offers()
+        </field>
+    </record> -->
+
+</odoo>

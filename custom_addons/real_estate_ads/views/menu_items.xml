@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--menu lvl 0-->
+    <menuitem
+        id="menu_root_property_ads"
+        name="Property Ads"/>
+
+
+    
+    <!--menu lvl 1-->
+    <menuitem
+        id="menu_property_ads"
+        name="Ads"
+        parent="menu_root_property_ads"
+        sequence="10"/>
+    <menuitem
+        id="menu_property_ads_settings"
+        name="Settings"
+        parent="menu_root_property_ads"
+        sequence="10"/>
+    
+    
+    <!--menu lvl 2-->
+    <menuitem
+        id="menu_property"
+        name="Property"
+        parent="menu_property_ads"
+        action="action_property"
+        sequence="10"/>
+    <menuitem
+        id="menu_property_type"
+        name="Property Types"
+        parent="menu_property_ads_settings"
+        action="action_property_type"
+        sequence="10"/>
+    <menuitem
+        id="menu_property_tag"
+        name="Property Tags"
+        parent="menu_property_ads_settings"
+        action="action_property_tag"
+        sequence="10"/>
+    <menuitem
+        id="menu_property_offer"
+        name="Property Offers"
+        parent="menu_property_ads"
+        action="action_property_offer"
+        sequence="10"/>
+</odoo>
